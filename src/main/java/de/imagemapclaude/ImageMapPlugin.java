@@ -218,7 +218,7 @@ public final class ImageMapPlugin extends JavaPlugin implements Listener, TabExe
             return;
         }
         // „Rechts“ aus Sicht eines Betrachters, der vor der Wand steht
-        int rx = face.getModeZ(), rz = -face.getModeX();
+        int rx = (int) Math.round(face.getDirection().getZ()), rz = -(int) Math.round(face.getDirection().getX());
         Block base = origin.getLocation().getBlock();
 
         List<Block> targets = new ArrayList<>();
