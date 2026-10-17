@@ -1,6 +1,6 @@
 package de.imagemapclaude;
 
-import org.bukkit.Color;
+import java.awt.Color;
 import org.bukkit.map.MapPalette;
 
 import java.util.ArrayList;
