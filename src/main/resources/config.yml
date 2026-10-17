@@ -1,0 +1,19 @@
+http:
+  # Port des eingebauten Upload-Servers (TCP, muss in der Firewall offen sein)
+  port: 8765
+  # Öffentlicher Hostname oder IP deines Minecraft-Servers. UNBEDINGT anpassen!
+  public-host: "localhost"
+  # Nur wenn du einen HTTPS-Reverse-Proxy vor den Port gestellt hast, z. B. "https://maps.example.com".
+  # Dann nutzt der Link die GitHub-Pages-Seite. Leer = die im Plugin eingebaute Seite über http.
+  https-url: ""
+
+# Adresse deiner GitHub-Pages-Seite (Benutzernamen anpassen)
+web-ui-url: "https://DEIN-GITHUB-NAME.github.io/ImageMap-Claude/"
+
+limits:
+  max-maps-per-axis: 16   # maximale Breite bzw. Höhe in Karten
+  max-upload-mb: 16
+  token-minutes: 15       # so lange ist der Upload-Link gültig
+
+# Alle platzierten Rahmen unsichtbar machen
+invisible-frames: false
